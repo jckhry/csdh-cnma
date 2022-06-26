@@ -19,7 +19,7 @@ analysis_output <- list()
 
 ##proportions
 
-evaluate::valuate(file("R/proportions.R"))
+evaluate::evaluate(file("R/proportions.R"))
 
 analysis_output[["proportions"]] <- prop.tab
 
@@ -35,7 +35,7 @@ analysis_output[["pairwise_morbidity"]] <- complications.pair
 
 ##surgery - primary outcome
 
-evaluate::valuate(file("R/nma_surgery_recurrence.R"))
+evaluate::evaluate(file("R/nma_surgery_recurrence.R"))
 
 analysis_output[["NMA_surgery_recurrence"]][["CNMA"]] <- cnma
 
